@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexdeposite</title>
+    <link rel="stylesheet" href="styletransac.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+
+    <section class="header">
+        <div class="container">
+            <div class="card">
+                <div class="inner-box">
+                    <div class="card-front">
+                        <a href="index.html"> <h2 >TAUKTAE BANK</h2></a><br/>
+                        <div class="depo">
+                            <label for="deposite" style="font-size: 21px;">Enter amount to be deposited</label>
+                            <input type="number" class="input-box" id="input1" name="deposite">
+                            <input type="submit"  class="input-box1" name="deposite" onclick="bank.deposite()" value="Deposite">
+                            <label id="dis1"></label>
+                        </div><br/>
+                        <div class="withd">
+                            <label for="withdrawl"  style="font-size: 21px;">Enter amount to be withdrawl</label>
+                            <input type="number" class="input-box"  id="input2"name="withdrawl">
+                            <input  type="submit" class="input-box1" name="withdrawl" onclick="bank.withdrawl()" value="Withdraw">
+                            <label for="wid" id="dis2"></label>
+                        </div><br/><br/><br/>
+                        <div class="bal">
+                            <input class="input-box2" type="submit" onclick="bank.current()" value="Current Balance">
+                            <br>
+                            <label for="wid" id="dis3" ></label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="function.js"></script>
+
+</body>
+</html>  
